@@ -1,4 +1,4 @@
-﻿@model List<Video>
+﻿@model List<User>
 
 
 
@@ -21,34 +21,34 @@
 	</thead>
 
 	<tbody>
-		@foreach (var video in Model)
+		@foreach (var user in Model)
 		{
 			<tr>
 				<td>
-					@video.Id
+					@user.Id
 				</td>
 
 				<td>
-					@video.Name
+					@user.Name
 				</td>
 				<td>
-					@video.Server
+					@user.Server
 				</td>
 
 				<td>
-					@video.Last
+					@user.Last
 				</td>
 				<td>
-					@video.LastDate
+					@user.LastDate
 				</td>
 
 
 
 				<td>
 					//razor
-					<a asp-action="Details" asp-route-id="@video.Id">DETAILS</a>
-					<a asp-action="Edit" asp-route-id="@video.Id">Edit</a>
-					<a asp-action="Delete" asp-route-id="@video.Id">Delete</a>
+					<a asp-action="Details" asp-route-id="@user.Id">DETAILS</a>
+					<a asp-action="Edit" asp-route-id="@user.Id">Edit</a>
+					<a asp-action="Delete" asp-route-id="@user.Id">Delete</a>
 
 
 				</td>
