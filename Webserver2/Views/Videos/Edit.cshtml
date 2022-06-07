@@ -1,0 +1,21 @@
+﻿@model Video
+
+<form asp-action="Edit">
+	<input type="hidden" name="id" value="@Model.Id"/>
+	<label> Name</label>
+	<input type="text" name="uname" value="@Model.Name" />
+	<label> Last</label>
+	<input type="text" name="last" value="@Model.Last"/>
+	<label>Server</label>
+	<input type="text" name="server" value="@Model.Server"/>
+	<label>LastDate</label>
+	<input type="text" name="lastdate" value="@Model.LastDate"/>
+
+	<div>
+		<input type="submit" value="Edit1"/>
+	</div>
+	
+	
+</form>
+
+	

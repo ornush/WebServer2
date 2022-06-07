@@ -1,0 +1,59 @@
+﻿@model List<Video>
+
+
+
+<table class="table">
+
+	<thead>
+		<a asp-action="Create">Create1</a>
+
+		<tr>
+			<th>Iddddddd</th>
+			<th>Name</th>
+			<th>Server</th>
+			<th>Last</th>
+			<th>LastDate</th>
+
+
+		</tr>
+
+
+	</thead>
+
+	<tbody>
+		@foreach (var video in Model)
+		{
+			<tr>
+				<td>
+					@video.Id
+				</td>
+
+				<td>
+					@video.Name
+				</td>
+				<td>
+					@video.Server
+				</td>
+
+				<td>
+					@video.Last
+				</td>
+				<td>
+					@video.LastDate
+				</td>
+
+
+
+				<td>
+					//razor
+					<a asp-action="Details" asp-route-id="@video.Id">DETAILS</a>
+					<a asp-action="Edit" asp-route-id="@video.Id">Edit</a>
+					<a asp-action="Delete" asp-route-id="@video.Id">Delete</a>
+
+
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+

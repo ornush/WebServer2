@@ -1,0 +1,20 @@
+﻿@model Video
+
+<ul>
+
+	<li> Id: @Model.Id</li>
+	<li> Name: @Model.Name</li>
+	<li> Last: @Model.Last</li>
+	<li> Server: @Model.Server</li>
+	<li> Views: @Model.LastDate</li>
+
+
+</ul>
+<form asp-action="Delete"><div>
+
+
+	<label> Are You Sure You Want To Delete?</label>
+	
+		<input type="submit" value="Delete1" />
+	</div>
+</form>
