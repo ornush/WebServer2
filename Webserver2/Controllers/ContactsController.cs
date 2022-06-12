@@ -34,7 +34,7 @@ namespace Webserver2.Controllers
             //  return Json(service.Videos.ToArray());
             return Json(service.GetAll().ToArray());
 
-            //  return View(service.GetAll());
+            // return View(service.GetAll());
         }
 
 
@@ -63,6 +63,11 @@ namespace Webserver2.Controllers
         [HttpGet("{id}")]
         public IActionResult Details(int id)
         {
+
+            if (id == null)
+            {
+                return NotFound();
+            }
             // Video video = videos.Find(x => x.Id == id);
             // return View(service.Get(id));
             return Json(service.Get(id));
@@ -86,9 +91,77 @@ namespace Webserver2.Controllers
             //   return RedirectToAction("index");
             service.Edit(id, uname, server, last, lastdate);
 
-            return RedirectToAction("index");
+            // return RedirectToAction("index");
+
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+            return Json(service.Get(id));
 
         }
+
+
+        // [ActionName("Delete")]
+        //Delete-  .foo.com/api/contacts/:id
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+
+            // Video video = videos.Find(video => video.Id == id);
+
+            // videos.Remove(video);
+            // return RedirectToAction("index");
+
+            service.Delete(id);
+            // return RedirectToAction("index");
+
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+            return Json(service.GetAll().ToArray());
+
+
+        }
+
+        //GET- .foo.com/api/contacts/:id/messages
+        [HttpGet("{id}/messages")]
+        public IActionResult GetMsg(int id)
+        {
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+            // Video video = videos.Find(x => x.Id == id);
+            // return View(service.Get(id));
+            return Json(service.GetMsg(id));
+
+        }
+
+        //POST- .foo.com/api/contacts/:id/messages
+        [HttpPost("{id}/messages")]
+        public IActionResult CreateMsg(int id, string uname, string server, string last, int lastdate)
+        {
+
+
+            service.CreateMsg(id, uname, server, last, lastdate);
+
+            // return RedirectToAction("index");
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+            return Json(service.Get(id));
+
+
+        }
+
+
 
 
         public IActionResult Create(string id)
@@ -97,25 +170,15 @@ namespace Webserver2.Controllers
         }
 
 
-
-
-
-
         //  [HttpGet("{id}")]
-        public IActionResult Edit(int  id)
+        public IActionResult Edit(int id)
         {
             //Video video = videos.Find(video => video.Id == id);
             return View(service.Get(id));
 
         }
 
-     
-
-
-        // [Route("api/[controller]/[action]")]
-
-    //    [HttpGet("delete/{id}")]
-        public IActionResult Delete(int id)
+        public IActionResult Delete1(int id)
         {
             // Video video = videos.Find(video => video.Id == id);
 
@@ -125,27 +188,8 @@ namespace Webserver2.Controllers
 
         }
 
-       
-
-     //  [HttpPost]
-      // [ActionName("Delete")]
-        public IActionResult Delete1(int id)
-        {
-
-            // Video video = videos.Find(video => video.Id == id);
-
-            // videos.Remove(video);
-            // return RedirectToAction("index");
-
-            service.Delete(id);
-            return RedirectToAction("index");
 
 
-
-        }
-
-
-        
 
 
 

@@ -30,8 +30,6 @@ namespace Webserver2.Services
             //title=name
             //server-new property
 
-          
-
 
             //videos.Add(new Video() { Id = 2, Title = "foo2", Description = "Bar2", Views = 22 });
             // videos.Add(new Video() { Id = 3, Title = "foo2", Description = "Bar3", Views = 23 });
@@ -41,35 +39,49 @@ namespace Webserver2.Services
 
         }
 
-
-
-
+        //get id for name
         public User Get(int id)
         {
             return videos.Find(x => x.Id == id);
-
-
-
         }
+
+
+        //get last message 
+        public string GetMsg(int id)
+        {
+            User video = Get(id);
+            return video.Last;
+            // return videos.Find(x => x.Id == id);
+        }
+
 
         public void Edit(int id, string uname, string server, string last, int lastdate)
         {
-
             User video = Get(id);
             video.Name = "Charles";
-        //    video.Last = last;
+            //    video.Last = last;
             video.Server = "localhost:7266";
-          //  video.LastDate = lastdate;
+            //  video.LastDate = lastdate;
         }
-
 
         public void Create(string uname, string last, string server, int lastdate)
         {
-           // int nextId = videos.Max(x => x.Id) + 1;
+            // int nextId = videos.Max(x => x.Id) + 1;
             videos.Add((new User() { Id = 8, Name = "ch", Server = "ch", Last = "ch", LastDate = 8 }));
             // return RedirectToAction("index");
         }
 
+
+        public void CreateMsg(int id, string uname, string server, string last, int lastdate)
+        {
+
+            User video = Get(id);
+            // video.Name = "Charles";
+            video.Last = video.Last + " " + ",this is a new message";
+
+            //  video.Server = "localhost:7266";
+            //  video.LastDate = lastdate;
+        }
 
 
         public void Delete(int id)
