@@ -5,8 +5,7 @@
 <table class="table">
 
 	<thead>
-		<a asp-action="index">get all contacts</a>
-		
+		<a asp-action="Create">Create1</a>
 
 		<tr>
 			<th>Iddddddd</th>
@@ -32,15 +31,25 @@
 				<td>
 					@user.Name
 				</td>
-				
-				
+				<td>
+					@user.Server
+				</td>
+
+				<td>
+					@user.Last
+				</td>
+				<td>
+					@user.LastDate
+				</td>
+
+
 
 				<td>
 					//razor
 					<a asp-action="Details" asp-route-id="@user.Id">DETAILS</a>
 					<a asp-action="Edit" asp-route-id="@user.Id">Edit</a>
 					<a asp-action="Delete" asp-route-id="@user.Id">Delete</a>
-
+					
 
 				</td>
 			</tr>
@@ -48,3 +57,4 @@
 	</tbody>
 </table>
 
+<script src="~/js/rest.js"></script>
