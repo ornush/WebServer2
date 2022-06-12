@@ -1,52 +1,67 @@
- # WebClient Project 
+ # WebServer Project 
 
 
-We wrote a webClient chat that contains at least 5 members chatting with each other. 
-In the chat you can interact and send masseges like sounds records, pictures, files, videos and text.
 
-what you'll need to install:<br />1.run "npm install" in the root folder  
+In This Project we have created RESTFUL API server that wil connect to our ClientChat Web App from the last project that call "WebClient".<br />
 
+The arguments that you'll need to enter for login will be the same as the last project.<br />
 
-After you download all the files you finally can run the Login or SignUp pages on Your broswer  
+The uniqueness of this project is that we can control on the static Web App with new server that can make the App to be Dynamic as it should.<br />
 
-<ins>**if you want to Register choose "login.html" page**<br />
-you will need to enter your:
-1. User Name (should include 4 Characters)
-2. Nick Name (should include 4 Characters -will apear in the chatBox) 
+In the chat you can interact and send only text masseges but onle via the server API requests.<br />
 
-When you are logged in, you will need to enter with one of our harded coded users from the Array below 
+After you download all the files you can run the App on Your broswer  <br />
 
+<ins>**if you want to Register**<br />
+you will need to enter the names from tha array below:
+1. User Name (should include 4 Characters)<br />
+ 
  users = [<br />
-  username: 'Brian1', nickname: 'Brian', password: 'a1234'<br />
-  username: 'Trevor1', nickname: 'Trevor', password: 'b1234'<br />
-  username: 'Jonathan1', nickname: 'Jonathan', password: 'c1234'<br />
-  username: 'Joshua1', nickname: 'Joshua', password: 'd1234'<br />
-  username: 'Ruth1', nickname: 'Ruth', password: 'e1234'<br />
-  username: 'Anne1', nickname: 'Anne', password: 'f1234'<br />
-  username: 'Abigail1', nickname: 'Abigail', password: 'g1234'<br />
 
+  Id = 1, Name = "bobby", Server = "localhost:7266", Last = "i know what you did last summer", LastDate = 22 <br />
+  Id = 2, Name = "alice", Server = "localhost7266", Last = "hi how are you", LastDate = 33 <br />
+ 
 
-<img src="https://user-images.githubusercontent.com/48882826/166236367-841e82cb-3d20-4a58-8246-5faebc40961b.png" alt="drawing" width="300" height="200"/>
+<ins>**for each action that you'll want to make there is an API request that sends the request from the server directly to the broswer**<br />
+<ins>**few examples:
 
+for the  -/api/contacts - you'll get all the users list  ///GET<br />
 
-<ins>**If you'll want to SignUp choose the "webClient.html" page**<br />
-you will need to enter your:
-1. User Name (should include 4 Characters)
-2. Nick Name (should include 4 Characters -will apear in the chatBox) 
-3. Picture
-4. PASSWORD(should include 4 Characters)
+<img src="https://user-images.githubusercontent.com/48882826/173248496-1671958a-c98c-4377-9772-418942e07b75.jpg" alt="drawing" width="300" height="200"/>
 
 
 
-<img src="https://user-images.githubusercontent.com/48882826/166236144-b161707c-e8ec-4602-b859-9647379301c1.png" alt="drawing" width="300" height="200"/>
+for the  - /api/contacts- you'll add a new user to the users list list //POST<br />
+
+<img src="https://user-images.githubusercontent.com/48882826/173248702-c23c8da3-9714-4f60-bc23-f46aba0f8cc0.JPG" alt="drawing" width="300" height="200"/>
 
 
 
-# if you succeed to Login/SignUp you can start chatting  :smile:<br />
+for the  -/api/contacts/id - you'll get only one user details  ///GET<br />
+
+<img src="https://user-images.githubusercontent.com/48882826/173248765-2aeaa3d7-483b-4a79-b474-fb5f831095ea.JPG" alt="drawing" width="300" height="200"/>
+
+
+<ins>**and so on...
+<ins>**you can delete a user and edit his details as the photos below <br />
+
+
+for the  -/api/contacts/id - you'll get only one user details (you can see that alice id is 2 and the name has changed)  //PUT<br />
+
+<img src="https://user-images.githubusercontent.com/48882826/173248872-eb6f9e52-9c3b-424e-96b1-fa9017fdc9ce.JPG" alt="drawing" width="300" height="200"/>
+
+
+for the  -/api/contacts/id - you'll  be able to delet the user from the users lists //DELETE<br />
+
+<img src="https://user-images.githubusercontent.com/48882826/173248883-20efae0c-8d76-40d9-a7cc-b0bfc7f1b29f.JPG" alt="drawing" width="300" height="200"/>
+
+<ins>** we have used POSTMAN and we recommand to use it too as well<br />
+
+# you can start send your HTTP requsts fro the server  :smile:<br />
 # enjoy!<br />
 <img src="https://user-images.githubusercontent.com/48882826/166235670-84aac62c-9b1f-411f-9405-af28efc394a5.png" alt="drawing" width="600" height="300"/>
 <br />
 
-In This Project We have used js,HTML,bootsrap and CSS.<br /> 
+In This Project We have used c#,js,HTML,bootsrap and CSS.<br /> 
 
 #### writers:  Orna Tapeta, Shimon Avraham 
