@@ -25,6 +25,9 @@ you will need to enter the names from tha array below:
 <ins>**for each action that you'll want to make there is an API request that sends the request from the server directly to the broswer**<br />
 <ins>**few examples:
 
+
+## -----we have used POSTMAN APP and we recommand to use it too as well<br />
+
 for the  -/api/contacts - you'll get all the users list  ///GET<br />
 
 <img src="https://user-images.githubusercontent.com/48882826/173248496-1671958a-c98c-4377-9772-418942e07b75.jpg" alt="drawing" width="300" height="200"/>
@@ -55,7 +58,7 @@ for the  -/api/contacts/id - you'll  be able to delet the user from the users li
 
 <img src="https://user-images.githubusercontent.com/48882826/173248883-20efae0c-8d76-40d9-a7cc-b0bfc7f1b29f.JPG" alt="drawing" width="300" height="200"/>
 
-<ins>** we have used POSTMAN and we recommand to use it too as well<br />
+
 
 # you can start send your HTTP requsts fro the server  :smile:<br />
 # enjoy!<br />
