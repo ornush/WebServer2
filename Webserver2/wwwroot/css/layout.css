@@ -1,0 +1,20 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: -1px;
+}
+
+body {
+    background-color: #8af6e6;
+    background-image: url("images/loggin2.jpg");
+}
+
+html {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+

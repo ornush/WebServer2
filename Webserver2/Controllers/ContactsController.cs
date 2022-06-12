@@ -9,12 +9,12 @@ namespace Webserver2.Controllers
     [Route("api/[controller]")]
 
     [ApiController]
-    public class contactsController : Controller
+    public class ContactsController : Controller
     {
         // private static List<Video> videos = new List<Video>();
         private UserService service;
 
-        public contactsController()
+        public ContactsController()
         {
             service = new UserService();
 
@@ -33,9 +33,9 @@ namespace Webserver2.Controllers
         public IActionResult Index()
         {
             //  return Json(service.Videos.ToArray());
-         //   return Json(service.GetAll().ToArray());
+            return Json(service.GetAll().ToArray());
          
-             return View(service.GetAll());
+         //    return View(service.GetAll());
         }
 
 
@@ -70,8 +70,8 @@ namespace Webserver2.Controllers
                 return NotFound();
             }
             // Video video = videos.Find(x => x.Id == id);
-             return View(service.Get(id));
-            //return Json(service.Get(id));
+            // return View(service.Get(id));
+            return Json(service.Get(id));
 
         }
 

@@ -1,0 +1,285 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: -1px;
+}
+
+body {
+    background-color: #8af6e6;
+  //  background-image: url("~/css/images/loggin2.jpg");
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#log {
+    width: 240px;
+    /*height: 250x;*/
+    border-radius: 80%;
+    border: 2px solid black;
+    margin-left: 250px;
+}
+
+#intro {
+    min-height: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* Center and scale the image nicely */
+    /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding: 100px 0; */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* password and user name container */
+.form-container {
+    background-color: rgb(255, 255, 255);
+    padding: 34px;
+    display: block;
+    margin-left: -26px;
+    margin-right: 38px;
+    width: 70%;
+    /* height: ; */
+    opacity: 0.8;
+    border-radius: 12px;
+}
+
+.left-col {
+    flex: 1;
+    margin-top: -150px;
+    display: block;
+    align-items: center;
+    padding-right: 190px;
+}
+
+    .left-col h1 {
+        color: white;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .left-col p {
+        color: white;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        text-align: center;
+        border-color: black;
+        /* max-width: 500px; */
+    }
+
+
+.field-group {
+    position: relative;
+    margin-bottom: 25px;
+    opacity: none;
+}
+/* Bordered form */
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 250px;
+    height: 15px;
+    padding: 18px 12px;
+    margin: 0px 10px;
+    /* display: inline-block;*/
+    border-radius: 25px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#remeber.me {
+    color: white;
+}
+
+/* Set a style for all buttons */
+#signUpButton {
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red)
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+   */
+
+
+
+/* label {
+    margin-left: 35px;
+    color: black;
+    line-height: -3ex;
+    float: left;
+    width: 3em;
+    margin-right: -7em;
+    
+  } */
+
+#formItem label {
+    text-align: center;
+    line-height: 650%;
+    font-size: .85em;
+}
+
+
+
+/* The "Forgot password" text */
+/* span.psw {
+      float: right;
+      padding-top: 16px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    } */
+
+/* Change styles for span and cancel button on extra small screens 
+    @media screen and (max-width: 300px) {
+      span.psw {
+        display: block;
+        float: none;
+      }
+      .cancelbtn {
+        width: 50%;
+        padding: 5px 8px;
+      }
+    }*/
+
+
+@media only screen and (min-width: 1000px) {
+
+    /* .container {
+		flex-direction: row;
+	} */
+    .left-col {
+        text-align: left;
+        padding-right: 75px;
+    }
+
+        .left-col h1 {
+            font-size: 3rem;
+            color: white;
+            line-height: 3.5rem;
+            -webkit-text-stroke: 2px black; /* width and color */
+        }
+
+        .left-col p {
+            font-size: 2.1rem;
+            color: black;
+        }
+
+    #error {
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    #error2 {
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    #error3 {
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    #error4 {
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    #error5 {
+        font-size: 0.9rem;
+        color: red;
+    }
+
+    #refresh {
+        text-align: center;
+    }
+
+    .right-col {
+        max-width: 500px;
+    }
+
+        .right-col .top-card p {
+            font-size: 1.1rem;
+        }
+
+        .right-col .top-card {
+            padding: 20px;
+        }
+
+        .right-col .form-container {
+            padding: 40px;
+        }
+
+        .right-col input::placeholder,
+        .right-col input {
+            font-size: 1.05rem;
+            height: 60px;
+        }
+
+        .right-col .form-footer {
+            margin-top: 20px;
+            font-size: .7rem;
+        }
+}
+
+/* pictureeeeeeeeee */
+#picture-upload {
+    display: none;
+    visibility: none;
+}
+
+.field-group i {
+    display: contents;
+    background: #eee;
+    align-items: baseline;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    float: right;
+}

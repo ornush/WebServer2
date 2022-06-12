@@ -2,7 +2,107 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="~/css/webclient.css">
+<title>Sign Up</title>
+
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=3.0"> -->
+<meta name="viewport" content="width=device-width, initial-scale=5.0">
+
+<!-- Bootstrap icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+
+<body>
+    <section id="intro">
+        <div class="left-col">
+
+
+            <img src="~/css/images/loggin.jpg" id="log" alt="LA" class="centerpicture">
+
+            <h1>Sign up <br> and start chatting! </h1>
+            <p>fill up yor details in the form</p>
+            <!-- image-->
+            <!-- buttons-->
+        </div>
+
+
+        <div class="container"></div>
+        <div class="right-col">
+            <!-- <div class="top-box">
+                <p> <span> ma rashum po </span>try to jouin!</p>
+            </div> -->
+
+            <div class="form-container">
+                <!--form-->
+                <!-- <div class="text-fields"></div> -->
+                <form action="#">
+                    <div class="field-group">
+                        <label for="uname" id="username"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="input-name" name="username" required>
+                    
+                        <div id="error"></div>
+                        <div id="error5"></div>
+                        <label for="nick" id="nickname"><b>Nickname</b></label>
+                        <input type="text" placeholder="Enter Nickname" name="nickname" required>
+                        <div id="error2"></div>
+
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pswd" required>
+                        <div id="error3"></div>
+
+
+                        <label for="confirmPsw"><b> Confirm Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="confirmPsw" required>
+                        <div id="error4"></div>
+
+
+                        <!-- picture button -->
+                        <label for="picture-upload"><b>Picture</b> <i class="bi bi-camera"></i></label>
+                        <input type="file" accept="image/*" id="picture-upload" name="picture" required>
+                        <p id="error_msg" style="color:red; font-size: 20px; font-weight: bold;"></p>
+
+                        <script>
+                            var down = document.getElementById('error_msg');
+                            var file = document.getElementById("picture-upload");
+                            function ErrorMsg() {
+                                if (file.files.length == 0) {
+                                    down.innerHTML = "No files selected";
+                                }
+                            }
+                        </script>
+
+                        <p id="refresh" style="color:red; display: inline block;"><b> if you want to fill your details
+                                and try again please
+                                refresh the page</b></p>
+
+
+                       // <button type="submit" id="signUpButton">
+                          <a class="nav-link text-dark" asp-area="" asp-controller="contacts" asp-action="Index">SignUp</a>
+                          </button>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <script src="webclient.js"></script>
+
+</body>
+
+</html>
