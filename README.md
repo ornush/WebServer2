@@ -2,13 +2,13 @@
 
 
 
-In This Project we have created RESTFUL API server that wil connect to our ClientChat Web App from the last project that call "WebClient".<br />
+In This Project I have created RESTFUL API server that wil connect to our ClientChat Web App from the last project that call "WebClient".<br />
 
 The arguments that you'll need to enter for login will be the same as the last project.<br />
 
 The uniqueness of this project is that we can control on the static Web App with new server that can make the App to be Dynamic as it should.<br />
 
-In the chat you can interact and send only text masseges but onle via the server API requests.<br />
+In the chat you can interact and send only text masseges but only via the server API requests.<br />
 
 After you download all the files you can run the App on Your broswer  <br />
 
@@ -26,7 +26,7 @@ you will need to enter the names from tha array below:
 <ins>**few examples:
 
 
-## -----we have used POSTMAN APP and we recommand to use it too as well<br />
+## -----I have used POSTMAN APP and I recommand to use it too as well<br />
 
 for the  -/api/contacts - you'll get all the users list  ///GET<br />
 
@@ -60,11 +60,11 @@ for the  -/api/contacts/id - you'll  be able to delet the user from the users li
 
 
 
-# you can start send your HTTP requsts fro the server  :smile:<br />
+# you can start send your HTTP requsts from the server  :smile:<br />
 # enjoy!<br />
 <img src="https://user-images.githubusercontent.com/48882826/166235670-84aac62c-9b1f-411f-9405-af28efc394a5.png" alt="drawing" width="600" height="300"/>
 <br />
 
-In This Project We have used c#,js,HTML,bootsrap and CSS.<br /> 
+In This Project I have used c#,js,HTML,bootsrap and CSS.<br /> 
 
-#### writers:  Orna Tapeta, Shimon Avraham 
+#### writer:  Orna Tapeta
